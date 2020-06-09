@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/3/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-springboot-loging" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/23/springboot-loging/" class="article-date">
+  <time datetime="2018-08-23T04:35:24.000Z" itemprop="datePublished">2018-08-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/23/springboot-loging/"> springboot loging		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>springboot默认使用的log是logback. file指定log文件</p>
+<pre><code>logging.file=/logs/user-logging.log</code></pre><p>level指定过滤级别，如果写root证明显示所有log，debug代表log的过滤级别。如果不知道自己需要的log在哪个包名下就可以先输出所有的，然后看需要的log在哪个包名下，然后再指定包名。</p>
+<pre><code>logging.level.root=debug</code></pre><p>也可以level后面跟包名，代表显示这个包名下的log</p>
+<pre><code>logging.level.org.mybatis=debug
+logging.level.org.springframework=info</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/23/springboot-loging/" data-id="ckb7xgvyg005zhgud1ma1040v" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-git-e6-93-8d-e4-bd-9c" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/22/git-e6-93-8d-e4-bd-9c/" class="article-date">
+  <time datetime="2018-08-22T09:01:48.000Z" itemprop="datePublished">2018-08-22</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/22/git-e6-93-8d-e4-bd-9c/"> git操作		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>部分合并</p>
+<pre><code>git cherry-pick &lt;commit 号&gt;</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/22/git-e6-93-8d-e4-bd-9c/" data-id="ckb7xgvxd003khgude32b265t" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-kotlin-10-e8-bf-9b-e5-88-b6-e4-b8-8e16-e8-bf-9b-e5-88-b6-e7-9a-84-e8-bd-ac-e6-8d-a2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/20/kotlin-10-e8-bf-9b-e5-88-b6-e4-b8-8e16-e8-bf-9b-e5-88-b6-e7-9a-84-e8-bd-ac-e6-8d-a2/" class="article-date">
+  <time datetime="2018-08-20T01:29:32.000Z" itemprop="datePublished">2018-08-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/20/kotlin-10-e8-bf-9b-e5-88-b6-e4-b8-8e16-e8-bf-9b-e5-88-b6-e7-9a-84-e8-bd-ac-e6-8d-a2/"> kotlin 10进制与16进制的转换		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>16进制转10进制</p>
+<pre><code>&quot;A0&quot;.toInt(16)
+//结果是160</code></pre><p>10进制转16进制</p>
+<pre><code>160.toString(16)
+结果是a0</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/20/kotlin-10-e8-bf-9b-e5-88-b6-e4-b8-8e16-e8-bf-9b-e5-88-b6-e7-9a-84-e8-bd-ac-e6-8d-a2/" data-id="ckb7xgvxt004mhgud68muewd6" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-install-jenkins-on-centos7" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/17/install-jenkins-on-centos7/" class="article-date">
+  <time datetime="2018-08-17T15:39:06.000Z" itemprop="datePublished">2018-08-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/17/install-jenkins-on-centos7/"> install jenkins on centos7		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>安装jdk,devel版本的</p>
+<pre><code>yum install java-1.8.0-openjdk-devel</code></pre><p>添加源</p>
+<pre><code>sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key</code></pre><p>安装</p>
+<pre><code>yum install jenkins</code></pre><p>启动</p>
+<pre><code>sudo systemctl start jenkins.service</code></pre><p>加开机启动</p>
+<pre><code>sudo systemctl enable jenkins.service</code></pre><p>加防火墙白名单</p>
+<pre><code>sudo firewall-cmd --zone=public --permanent --add-port=8080/tcp
+sudo firewall-cmd --reload</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/17/install-jenkins-on-centos7/" data-id="ckb7xgvxq004ehgud504j72je" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e5-8e-bb-e9-99-a4-e7-8e-bb-e7-92-83-e8-83-b6-e4-b8-8a-e7-9a-84-e9-bb-91-e7-82-b9" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/17/e5-8e-bb-e9-99-a4-e7-8e-bb-e7-92-83-e8-83-b6-e4-b8-8a-e7-9a-84-e9-bb-91-e7-82-b9/" class="article-date">
+  <time datetime="2018-08-17T04:48:50.000Z" itemprop="datePublished">2018-08-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/17/e5-8e-bb-e9-99-a4-e7-8e-bb-e7-92-83-e8-83-b6-e4-b8-8a-e7-9a-84-e9-bb-91-e7-82-b9/"> 去除玻璃胶上的黑点		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>生活小妙招：玻璃胶上的黑点污渍擦不下去可以滴点84消毒液在上面，然后用纸巾盖上静置30分钟，黑点就会消失。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/17/e5-8e-bb-e9-99-a4-e7-8e-bb-e7-92-83-e8-83-b6-e4-b8-8a-e7-9a-84-e9-bb-91-e7-82-b9/" data-id="ckb7xgvwk0028hgudhwfzdiqh" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-gitlab-e5-ae-8c-e5-85-a8-e5-8d-b8-e8-bd-bd-on-centos7" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/17/gitlab-e5-ae-8c-e5-85-a8-e5-8d-b8-e8-bd-bd-on-centos7/" class="article-date">
+  <time datetime="2018-08-17T00:59:57.000Z" itemprop="datePublished">2018-08-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/17/gitlab-e5-ae-8c-e5-85-a8-e5-8d-b8-e8-bd-bd-on-centos7/"> gitlab 完全卸载 on centos7		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>sudo gitlab-ctl stop
+sudo yum remove gitlab-ce
+sudo rm -r /var/opt/gitlab
+sudo rm -r /opt/gitlab
+sudo rm -r /etc/gitlab</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/17/gitlab-e5-ae-8c-e5-85-a8-e5-8d-b8-e8-bd-bd-on-centos7/" data-id="ckb7xgvxh003rhgudfqa1089d" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e9-85-8d-e7-bd-aegitlab-e6-9c-89push-e6-97-b6jenkins-e7-9a-84job-e8-87-aa-e5-8a-a8-e6-89-a7-e8-a1-8c" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/17/e9-85-8d-e7-bd-aegitlab-e6-9c-89push-e6-97-b6jenkins-e7-9a-84job-e8-87-aa-e5-8a-a8-e6-89-a7-e8-a1-8c/" class="article-date">
+  <time datetime="2018-08-17T00:59:20.000Z" itemprop="datePublished">2018-08-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/17/e9-85-8d-e7-bd-aegitlab-e6-9c-89push-e6-97-b6jenkins-e7-9a-84job-e8-87-aa-e5-8a-a8-e6-89-a7-e8-a1-8c/"> 配置gitlab有push时Jenkins的job自动执行		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="jenkins"><a href="#jenkins" class="headerlink" title="jenkins"></a>jenkins</h3><p>Build Triggers用remotely模式，然后按格式填写url，此处的url是被调用的，意思是通过这个url就能通知jenkins执行job。 格式如下,JENKINS_URL填可以被调用的，token自己定义</p>
+<pre><code>JENKINS_URL/job/user/build?token=TOKEN_NAME</code></pre><p>示例</p>
+<pre><code>http://192.168.1.211:8080/job/user/build?token=xxxx</code></pre><h3 id="gitlab"><a href="#gitlab" class="headerlink" title="gitlab"></a>gitlab</h3><p>settings-&gt;intergrations添加一个webhook， url格式如下,USERNAME就是用户名，USER_API_KEY是用对应可以操作接口的key，在jenkins管理页面的用户页面的Configure的API Token。</p>
+<pre><code>http://USERNAME:USER_API_TOKEN@SERVER_URL/job/user/build</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/17/e9-85-8d-e7-bd-aegitlab-e6-9c-89push-e6-97-b6jenkins-e7-9a-84job-e8-87-aa-e5-8a-a8-e6-89-a7-e8-a1-8c/" data-id="ckb7xgvx60039hgudh6t5biab" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e5-ae-89-e8-a3-85docker-e7-89-88gitlab" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/16/e5-ae-89-e8-a3-85docker-e7-89-88gitlab/" class="article-date">
+  <time datetime="2018-08-16T05:09:45.000Z" itemprop="datePublished">2018-08-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/16/e5-ae-89-e8-a3-85docker-e7-89-88gitlab/"> 安装docker版gitlab		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>先用docker pull拉取镜像</p>
+<pre><code>docker pull gitlab/gitlab-ce</code></pre><p>运行镜像镜像,映射端口和目录,默认配置的gitlab会起80端口，先映射出来后期可以修改。-v不用提前创建目录，docker会自动绑创建。</p>
+<pre><code>docker run -d -p 180:80 -v /root/gitlab/config:/etc/gitlab -v /root/gitlab/data:/var/opt/gitlab -v /root/gitlab/log:/var/log/gitlab --privileged=true --restart always --name gitlab 966f4a515457</code></pre><p>如果说想改docker内部的gitlab的端口号或者.git源的路径就需要改配置文件。直接改映射出来的/root/gitlab/config/gitlab.rb文件的</p>
+<pre><code>external_url &apos;http://fdxun.com:180&apos;</code></pre><p>然后进入容器重启配置，会自动解析配置的url的端口号，然后按照这个端口号起服务</p>
+<pre><code>docker exec -it gitlab bash
+gitlab-ctl reconfigure</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/16/e5-ae-89-e8-a3-85docker-e7-89-88gitlab/" data-id="ckb7xgvwl002ahgudhggp15hc" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-vue-axios-post-e7-94-a8from-urlencoded-e6-8f-90-e4-ba-a4-e8-af-b7-e6-b1-82" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/14/vue-axios-post-e7-94-a8from-urlencoded-e6-8f-90-e4-ba-a4-e8-af-b7-e6-b1-82/" class="article-date">
+  <time datetime="2018-08-14T08:59:24.000Z" itemprop="datePublished">2018-08-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/14/vue-axios-post-e7-94-a8from-urlencoded-e6-8f-90-e4-ba-a4-e8-af-b7-e6-b1-82/"> vue axios post用from-urlencoded提交请求		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>默认的axios是按照json形式提交的参数，需要引入qs类，用它转化一下.</p>
+<pre><code>import axios from &apos;axios&apos;;
+import qs from &apos;qs&apos; ;
+
+const endPoint = `${endPointApi}/ControllerX`;  
+
+const data = qs.stringify({ 
+    grant_type: &apos;password&apos;,            
+    user: userName, 
+    password: userPass
+});
+
+const headers = {
+    &apos;Content-Type&apos;: &apos;application/x-www-form-urlencoded;charset=UTF-8&apos;
+};
+
+axios.post(endPoint, data, headers)
+.then(function (response) {
+    debugger;
+    console.log(response);
+})
+.catch(function (error) {
+    debugger;
+    console.log(error);
+});</code></pre><p>或者直接用get的拼接形式</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/14/vue-axios-post-e7-94-a8from-urlencoded-e6-8f-90-e4-ba-a4-e8-af-b7-e6-b1-82/" data-id="ckb7xgvyi0063hgud5ni74qgm" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-centos7-e5-ae-89-e8-a3-85gradle" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/14/centos7-e5-ae-89-e8-a3-85gradle/" class="article-date">
+  <time datetime="2018-08-14T03:19:16.000Z" itemprop="datePublished">2018-08-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/14/centos7-e5-ae-89-e8-a3-85gradle/"> centos7安装gradle		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>下载安装包到本地</p>
+<pre><code>wget https://downloads.gradle.org/distributions/gradle-4.9-bin.zip</code></pre><p>创建gradle目录</p>
+<pre><code>sudo mkdir /opt/gradle</code></pre><p>解压</p>
+<pre><code>sudo unzip -d /opt/gradle gradle-4.9-bin.zip</code></pre><p>添加环境变量</p>
+<pre><code>export PATH=$PATH:/opt/gradle/gradle-4.9/bin</code></pre><p>运行指令看版本号</p>
+<pre><code>gradle -v</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/14/centos7-e5-ae-89-e8-a3-85gradle/" data-id="ckb7xgvw1001nhgudgl2khez7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/2/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/4/">Next &amp;raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/android/">android</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/android/kotlin/">kotlin</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/centos/">centos</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/docker/">docker</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/docker/nginx/">nginx</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/java-web/">java web</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/kotlin/">kotlin</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/nginx/">nginx</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ops/">ops</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/react-native/">react-native</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%86%85%E7%BD%91%E9%80%8F%E4%BC%A0/">内网透传</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/06/09/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/20/docker-e6-97-a5-e5-bf-97-e6-b8-85-e7-90-86/"> docker日志清理		</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/16/linux-e4-bf-ae-e6-94-b9-e6-97-b6-e9-97-b4/"> linux 修改时间		</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/16/hex-ascii-e8-bd-ac-e5-8c-96/"> Hex ASCII 转化		</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/16/gitlab-e6-8a-a5500-e9-97-ae-e9-a2-98-e4-bf-ae-e5-a4-8d/"> gitlab报500问题修复		</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

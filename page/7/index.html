@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/7/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-docker-e7-9a-84-e6-97-b6-e9-97-b4-e5-92-8c-e5-ae-bf-e4-b8-bb-e6-9c-ba-e6-97-b6-e9-97-b4-e4-b8-8d-e4-b8-80-e8-87-b4-e9-97-ae-e9-a2-98" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/10/docker-e7-9a-84-e6-97-b6-e9-97-b4-e5-92-8c-e5-ae-bf-e4-b8-bb-e6-9c-ba-e6-97-b6-e9-97-b4-e4-b8-8d-e4-b8-80-e8-87-b4-e9-97-ae-e9-a2-98/" class="article-date">
+  <time datetime="2018-07-10T09:24:54.000Z" itemprop="datePublished">2018-07-10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/docker/">docker</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/10/docker-e7-9a-84-e6-97-b6-e9-97-b4-e5-92-8c-e5-ae-bf-e4-b8-bb-e6-9c-ba-e6-97-b6-e9-97-b4-e4-b8-8d-e4-b8-80-e8-87-b4-e9-97-ae-e9-a2-98/"> docker的时间和宿主机时间不一致问题		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Dockerfile里加下面的代码</p>
+<pre><code>ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime &amp;&amp; echo $TZ &gt; /etc/timezone</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/10/docker-e7-9a-84-e6-97-b6-e9-97-b4-e5-92-8c-e5-ae-bf-e4-b8-bb-e6-9c-ba-e6-97-b6-e9-97-b4-e4-b8-8d-e4-b8-80-e8-87-b4-e9-97-ae-e9-a2-98/" data-id="ckb7xgvwb001yhgud1lb8b0wl" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-a6-81-e7-94-a8-e9-80-9a-e7-9f-a5-e6-a0-8f-e7-9a-84-e4-b8-8b-e6-8b-89-e5-8a-a8-e4-bd-9c" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/28/e7-a6-81-e7-94-a8-e9-80-9a-e7-9f-a5-e6-a0-8f-e7-9a-84-e4-b8-8b-e6-8b-89-e5-8a-a8-e4-bd-9c/" class="article-date">
+  <time datetime="2018-06-28T07:59:32.000Z" itemprop="datePublished">2018-06-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/android/">android</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/28/e7-a6-81-e7-94-a8-e9-80-9a-e7-9f-a5-e6-a0-8f-e7-9a-84-e4-b8-8b-e6-8b-89-e5-8a-a8-e4-bd-9c/"> 禁用通知栏的下拉动作		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>import android.app.Activity;
+import android.content.Context;
+import android.graphics.PixelFormat;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.MotionEvent;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+
+public class StatusBarUtil {
+
+    public static void preventStatusBarExpansion(Context context) {
+        WindowManager manager = ((WindowManager) context.getApplicationContext()
+                .getSystemService(Context.WINDOW_SERVICE));
+
+        Activity activity = (Activity)context;
+        WindowManager.LayoutParams localLayoutParams = new WindowManager.LayoutParams();
+        localLayoutParams.type = WindowManager.LayoutParams.TYPE_SYSTEM_ERROR;
+        localLayoutParams.gravity = Gravity.TOP;
+        localLayoutParams.flags = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE|
+
+                // this is to enable the notification to recieve touch events
+                WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL |
+
+                // Draws over status bar
+                WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN;
+
+        localLayoutParams.width = WindowManager.LayoutParams.MATCH_PARENT;
+        //https://stackoverflow.com/questions/1016896/get-screen-dimensions-in-pixels
+        int resId = activity.getResources().getIdentifier(&quot;status_bar_height&quot;, &quot;dimen&quot;, &quot;android&quot;);
+        int result = 0;
+        if (resId &gt; 0) {
+            result = activity.getResources().getDimensionPixelSize(resId);
+        }
+
+        localLayoutParams.height = result;
+
+        localLayoutParams.format = PixelFormat.TRANSPARENT;
+
+        customViewGroup view = new customViewGroup(context);
+
+        manager.addView(view, localLayoutParams);
+    }
+
+    public static class customViewGroup extends ViewGroup {
+
+        public customViewGroup(Context context) {
+            super(context);
+        }
+
+        @Override
+        protected void onLayout(boolean changed, int l, int t, int r, int b) {
+        }
+
+        @Override
+        public boolean onInterceptTouchEvent(MotionEvent ev) {
+            Log.v(&quot;customViewGroup&quot;, &quot;**********Intercepted&quot;);
+            return true;
+        }
+    }
+}</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/28/e7-a6-81-e7-94-a8-e9-80-9a-e7-9f-a5-e6-a0-8f-e7-9a-84-e4-b8-8b-e6-8b-89-e5-8a-a8-e4-bd-9c/" data-id="ckb7xgvx0002whgud8m0b0km2" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-gogs-e4-bf-ae-e6-94-b9git-e4-bb-93-e5-ba-93-e7-9a-84-e5-9c-b0-e5-9d-80" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/23/gogs-e4-bf-ae-e6-94-b9git-e4-bb-93-e5-ba-93-e7-9a-84-e5-9c-b0-e5-9d-80/" class="article-date">
+  <time datetime="2018-06-23T12:44:13.000Z" itemprop="datePublished">2018-06-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/git/">git</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/23/gogs-e4-bf-ae-e6-94-b9git-e4-bb-93-e5-ba-93-e7-9a-84-e5-9c-b0-e5-9d-80/"> gogs修改git仓库的地址		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>当我们用docker部署后，仓库地址默认会用localhost地址。而我们实际访问的应该是个域名，需要手动修改。 1. 安装之前需要把gogs的data目录映射到宿主机，因为要修改配置文件。 2. 配置文件在 /conf/app.ini 3. 修改server标签下的ROOT_URL 为外网地址</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/23/gogs-e4-bf-ae-e6-94-b9git-e4-bb-93-e5-ba-93-e7-9a-84-e5-9c-b0-e5-9d-80/" data-id="ckb7xgvxi003thgud730hed61" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-gson-e4-bb-a3-e6-9b-bfjackson-e7-9a-84converter-e5-9c-b0-e4-bd-8d" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/20/gson-e4-bb-a3-e6-9b-bfjackson-e7-9a-84converter-e5-9c-b0-e4-bd-8d/" class="article-date">
+  <time datetime="2018-06-20T13:27:43.000Z" itemprop="datePublished">2018-06-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/java-web/">java web</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/20/gson-e4-bb-a3-e6-9b-bfjackson-e7-9a-84converter-e5-9c-b0-e4-bd-8d/"> gson代替jackson的converter地位		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="初衷"><a href="#初衷" class="headerlink" title="初衷"></a>初衷</h3><p>为什么会要用gson替代jackson原因如下： - jackson的序列化依赖的是getter - 首字母大写的属性在用getter序列化时会自动转换成小写，就和属性名本身不一致 - gson序列化直接依赖属性本身，名称不会变，即使加getter也不会按照getter方式序列化</p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol>
+<li><p>增加gson依赖</p>
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;com.google.code.gson&lt;/groupId&gt;
+    &lt;artifactId&gt;gson&lt;/artifactId&gt;
+    &lt;version&gt;2.8.2&lt;/version&gt;
+&lt;/dependency&gt;</code></pre></li>
+</ol>
+<ol start="2">
+<li><p>增加配置文件</p>
+<p>package com.example.demo;</p>
+<p>import org.springframework.boot.autoconfigure.web.HttpMessageConverters;<br>import org.springframework.context.annotation.Bean;<br>import org.springframework.context.annotation.Configuration;<br>import org.springframework.http.converter.HttpMessageConverter;<br>import org.springframework.http.converter.json.GsonHttpMessageConverter;</p>
+<p>import java.util.ArrayList;<br>import java.util.Collection;</p>
+<p>@Configuration<br>public class GsonConfiguration {</p>
+<pre><code>@Bean
+public HttpMessageConverters customConverters() {
+    Collection&lt;HttpMessageConverter&lt;?&gt;&gt; messageConverters = new ArrayList&lt;&gt;();
+    GsonHttpMessageConverter gsonHttpMessageConverter = new GsonHttpMessageConverter();
+    messageConverters.add(gsonHttpMessageConverter);
+    return new HttpMessageConverters(true, messageConverters);
+}</code></pre><p>}</p>
+</li>
+</ol>
+<h4 id="附加"><a href="#附加" class="headerlink" title="附加"></a>附加</h4><p>如果不想要jackson就加下面的依赖忽略，如果想2个共存可以不加 ，如果共存需注意转化顺序。</p>
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+    &lt;exclusions&gt;
+        &lt;exclusion&gt;
+            &lt;artifactId&gt;jackson-databind&lt;/artifactId&gt;
+            &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;
+        &lt;/exclusion&gt;
+    &lt;/exclusions&gt;
+&lt;/dependency&gt;</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/20/gson-e4-bb-a3-e6-9b-bfjackson-e7-9a-84converter-e5-9c-b0-e4-bd-8d/" data-id="ckb7xgvxk0040hgud361e4nak" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e6-9f-a5-e7-ab-af-e5-8f-a3-e5-8d-a0-e7-94-a8" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/19/e6-9f-a5-e7-ab-af-e5-8f-a3-e5-8d-a0-e7-94-a8/" class="article-date">
+  <time datetime="2018-06-19T04:57:41.000Z" itemprop="datePublished">2018-06-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/ops/">ops</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/19/e6-9f-a5-e7-ab-af-e5-8f-a3-e5-8d-a0-e7-94-a8/"> 查端口占用		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="centos7"><a href="#centos7" class="headerlink" title="centos7"></a>centos7</h3><h4 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h4><pre><code>ss -lnp|grep 4567</code></pre><h4 id="查进程"><a href="#查进程" class="headerlink" title="查进程"></a>查进程</h4><pre><code>ps -ef|grep 4766</code></pre><h3 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h3><h4 id="端口-1"><a href="#端口-1" class="headerlink" title="端口"></a>端口</h4><pre><code>netstat -aon|findstr &quot;9050&quot;</code></pre><h4 id="查进程-1"><a href="#查进程-1" class="headerlink" title="查进程"></a>查进程</h4><pre><code>tasklist|findstr &quot;2016&quot;</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/19/e6-9f-a5-e7-ab-af-e5-8f-a3-e5-8d-a0-e7-94-a8/" data-id="ckb7xgvwv002rhgudde9xgsd0" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-nginx-e7-90-86-e8-a7-a3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/19/nginx-e7-90-86-e8-a7-a3/" class="article-date">
+  <time datetime="2018-06-19T04:56:57.000Z" itemprop="datePublished">2018-06-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/nginx/">nginx</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/19/nginx-e7-90-86-e8-a7-a3/"> nginx理解		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>可以写多个server监听同一个端口号，但是要求server_name不一样,就会达到虽然用的同一个主机访问不同的域名走不同的反代，达到访问不同网页的目的。 linux的nginx是一个.conf文件就是一个server，然后可以为每一个域名建一个这个配置文件，专门配置它的代理</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/19/nginx-e7-90-86-e8-a7-a3/" data-id="ckb7xgvy6005ehgud7efz0nyy" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-nginx-e5-8f-8d-e4-bb-a3-e7-9a-84-e5-9f-ba-e6-9c-ac-e9-85-8d-e7-bd-ae" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/19/nginx-e5-8f-8d-e4-bb-a3-e7-9a-84-e5-9f-ba-e6-9c-ac-e9-85-8d-e7-bd-ae/" class="article-date">
+  <time datetime="2018-06-19T04:54:32.000Z" itemprop="datePublished">2018-06-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/nginx/">nginx</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/19/nginx-e5-8f-8d-e4-bb-a3-e7-9a-84-e5-9f-ba-e6-9c-ac-e9-85-8d-e7-bd-ae/"> nginx反代的基本配置		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>server {
+  listen 80;
+  server_name www.fdxun.com;
+
+  location / {
+    proxy_pass http://localhost:8081;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  }
+}</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/19/nginx-e5-8f-8d-e4-bb-a3-e7-9a-84-e5-9f-ba-e6-9c-ac-e9-85-8d-e7-bd-ae/" data-id="ckb7xgvy30057hgudgx4td8q1" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e7-a6-81-e7-94-a8selinux" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/19/e7-a6-81-e7-94-a8selinux/" class="article-date">
+  <time datetime="2018-06-19T04:52:50.000Z" itemprop="datePublished">2018-06-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/centos/">centos</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/19/e7-a6-81-e7-94-a8selinux/"> 禁用selinux		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>定位文件</p>
+<pre><code>vi /etc/sysconfig/selinux</code></pre><p>编辑文件</p>
+<pre><code>SELINUX=disabled</code></pre><p>重启系统</p>
+<pre><code>reboot</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/19/e7-a6-81-e7-94-a8selinux/" data-id="ckb7xgvx1002yhgud149j5ykd" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-nginx-e5-92-8cfrp-e5-85-b1-e4-ba-ab80-e7-ab-af-e5-8f-a3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/19/nginx-e5-92-8cfrp-e5-85-b1-e4-ba-ab80-e7-ab-af-e5-8f-a3/" class="article-date">
+  <time datetime="2018-06-19T04:52:30.000Z" itemprop="datePublished">2018-06-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/nginx/">nginx</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/19/nginx-e5-92-8cfrp-e5-85-b1-e4-ba-ab80-e7-ab-af-e5-8f-a3/"> nginx和frp共享80端口		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一台主机的情况下共用80端口，这里要借助域名。 把80端口交给nginx,然后frp的http服务起其他端口比如8888。 nginx通过反代映射给frp。</p>
+<pre><code>server {
+    listen       80;
+    server_name  *.oxoxo.xyz;
+
+    location / {
+        proxy_pass      http://127.0.0.1:8888;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+}</code></pre><p>这里需要注意的是frp只能用二级域名做透传，不支持一级域名。 而且一般一级域名也都是要留给自己对一些服务做介绍用，比如我可以在主页里介绍这个透传服务。 为了使自起服务和透传的服务共用80端口就需要再建一个nginx的配置文件，也监听80端口但是域名不一样，我们这里可以用主域名。</p>
+<pre><code>server {
+    listen       80;
+    server_name  www.oxoxo.xyz oxoxo.xyz;
+
+    location / {
+        proxy_pass      http://127.0.0.1:8000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+}</code></pre><p>8000就是我起的frps的http服务，用来描述内网透传服务用的。 这个2段代码可以分别建.conf文件，放在/nginx/conf/conf.d目录下，比如default.conf、default1.conf，然后运行nginx就会自动加载这2个配置文件，根据不同的域名走不同的代理配置。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/19/nginx-e5-92-8cfrp-e5-85-b1-e4-ba-ab80-e7-ab-af-e5-8f-a3/" data-id="ckb7xgvy5005chgud9ob37rzq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-e5-ae-89-e8-a3-85docker-e7-89-88nginx" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/19/e5-ae-89-e8-a3-85docker-e7-89-88nginx/" class="article-date">
+  <time datetime="2018-06-19T02:56:35.000Z" itemprop="datePublished">2018-06-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/docker/">docker</a>►<a class="article-category-link" href="/categories/docker/nginx/">nginx</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/19/e5-ae-89-e8-a3-85docker-e7-89-88nginx/"> 安装docker版nginx		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li><p>下载镜像 <code>docker pull nginx</code></p>
+</li>
+<li><p>运行镜像 <code>docker run -d -P --name nginx cd52</code></p>
+</li>
+<li><p>新建目录，并进入目录 <code>mkdir nginx</code> <code>cd nginx</code></p>
+</li>
+<li><p>拷贝配置到当前目录,.代表当前目录</p>
+</li>
+</ol>
+<p><code>docker cp nginx:/etc/nginx .</code></p>
+<ol start="5">
+<li><p>停止并删除nginx容器 <code>docker rm -f nginx</code></p>
+</li>
+<li><p>目录改名conf <code>mv nginx conf</code></p>
+</li>
+<li><p>新建容器，把当前目录加卷 <code>docker run --name nginx -d -p 9012:80 -v /root/nginx/html:/usr/share/nginx/html -v /root/nginx/conf:/etc/nginx cd52</code></p>
+</li>
+</ol>
+<p>如果遇到/etc/nginx/nginx.conf权限问题打不开需要禁用selinux。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/19/e5-ae-89-e8-a3-85docker-e7-89-88nginx/" data-id="ckb7xgvwp002ghgud9zu399jo" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/6/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/8/">Next &amp;raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/android/">android</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/android/kotlin/">kotlin</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/centos/">centos</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/docker/">docker</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/docker/nginx/">nginx</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/java-web/">java web</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/kotlin/">kotlin</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/nginx/">nginx</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ops/">ops</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/react-native/">react-native</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%86%85%E7%BD%91%E9%80%8F%E4%BC%A0/">内网透传</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/06/09/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/20/docker-e6-97-a5-e5-bf-97-e6-b8-85-e7-90-86/"> docker日志清理		</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/16/linux-e4-bf-ae-e6-94-b9-e6-97-b6-e9-97-b4/"> linux 修改时间		</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/16/hex-ascii-e8-bd-ac-e5-8c-96/"> Hex ASCII 转化		</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/16/gitlab-e6-8a-a5500-e9-97-ae-e9-a2-98-e4-bf-ae-e5-a4-8d/"> gitlab报500问题修复		</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/page/5/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-js-e8-a7-a3-e6-9e-90-e5-8d-95-e5-bc-95-e5-8f-b7json" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/21/js-e8-a7-a3-e6-9e-90-e5-8d-95-e5-bc-95-e5-8f-b7json/" class="article-date">
+  <time datetime="2018-07-21T04:39:20.000Z" itemprop="datePublished">2018-07-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/react-native/">react-native</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/21/js-e8-a7-a3-e6-9e-90-e5-8d-95-e5-bc-95-e5-8f-b7json/"> js解析单引号json		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>&quot;﻿{&apos;tag&apos;:null,&apos;user&apos;:&apos;137239&apos;,&apos;code&apos;:&apos;0&apos;,&apos;message&apos;:&apos;登陆成功&apos;,&apos;token&apos;:&apos;69af86a661e76448b177767db58c4bcc&apos;}&quot;</code></pre><p>JSON.parse可以解析普通的双引号json,像这种单引号的json需要采用另一种解析方式。</p>
+<pre><code>eval(&quot;(&quot;+text+&quot;)&quot;)</code></pre><p>如果用react-native的fetch框架获取数据时不能用response.json()直接取json对象,因为解析不出来，需要用response.text()先取出string来然后发现是单引号的json字符串然后选择eval函数解析成json对象。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/21/js-e8-a7-a3-e6-9e-90-e5-8d-95-e5-bc-95-e5-8f-b7json/" data-id="ckb7xgvxs004khgud976w5jj3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hyper-v-e7-bd-91-e7-bb-9c" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/20/hyper-v-e7-bd-91-e7-bb-9c/" class="article-date">
+  <time datetime="2018-07-20T07:40:20.000Z" itemprop="datePublished">2018-07-20</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/ops/">ops</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/20/hyper-v-e7-bd-91-e7-bb-9c/"> hyper-v 网络		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="NAT"><a href="#NAT" class="headerlink" title="NAT"></a>NAT</h2><h5 id="安装微软提供的驱动插件"><a href="#安装微软提供的驱动插件" class="headerlink" title="安装微软提供的驱动插件"></a>安装微软提供的驱动插件</h5><p><a href="https://www.microsoft.com/en-us/download/details.aspx?id=55106" target="_blank" rel="noopener" title="下载地址">下载地址</a>安装方法见pdf</p>
+<blockquote>
+<p>如果是winserver 2008 r2下安装centos7，请下载 <a href="https://download.microsoft.com/download/6/8/F/68FE11B8-FAA4-4F8D-8C7D-74DA7F2CFC8C/LinuxIC-4.2.5-2.iso" target="_blank" rel="noopener" title="LinuxIC-4.2.5-2">LinuxIC-4.2.5-2</a></p>
+</blockquote>
+<h5 id="在hyper-v管理器里新建虚拟网络交互器-选内部形式"><a href="#在hyper-v管理器里新建虚拟网络交互器-选内部形式" class="headerlink" title="在hyper-v管理器里新建虚拟网络交互器,选内部形式"></a>在hyper-v管理器里新建虚拟网络交互器,选内部形式</h5><h5 id="在windows的网络适配器设置里把能上网的网络共享给新建的内部虚拟网卡"><a href="#在windows的网络适配器设置里把能上网的网络共享给新建的内部虚拟网卡" class="headerlink" title="在windows的网络适配器设置里把能上网的网络共享给新建的内部虚拟网卡"></a>在windows的网络适配器设置里把能上网的网络共享给新建的内部虚拟网卡</h5><h5 id="进hyper-v的Linux系统里重启network"><a href="#进hyper-v的Linux系统里重启network" class="headerlink" title="进hyper-v的Linux系统里重启network"></a>进hyper-v的Linux系统里重启network</h5><pre><code>systemctl restart network</code></pre><h5 id="查看有没有生成ip"><a href="#查看有没有生成ip" class="headerlink" title="查看有没有生成ip"></a>查看有没有生成ip</h5><pre><code>ip addr</code></pre><h5 id="ping一下"><a href="#ping一下" class="headerlink" title="ping一下"></a>ping一下</h5><h5 id="通过修改网卡文件将dhcp网络改成static，并设置IPADDR-GATEWAY-DNS1"><a href="#通过修改网卡文件将dhcp网络改成static，并设置IPADDR-GATEWAY-DNS1" class="headerlink" title="通过修改网卡文件将dhcp网络改成static，并设置IPADDR,GATEWAY,DNS1"></a>通过修改网卡文件将dhcp网络改成static，并设置IPADDR,GATEWAY,DNS1</h5><p>/etc/sysconfig/network-scripts</p>
+<pre><code>BOOTPROTO=static
+ONBOOT=yes
+IPADDR=192.168.137.100
+GATEWAY=192.168.137.1
+DNS1=8.8.8.8</code></pre><h5 id="重启一下network"><a href="#重启一下network" class="headerlink" title="重启一下network"></a>重启一下network</h5><pre><code>systemctl restart network</code></pre><p>也可以用dhcp类型,就设置DNS，ip自动获取.</p>
+<pre><code>BOOTPROTO=dhcp
+ONBOOT=yes
+DNS1=8.8.8.8</code></pre><h2 id="桥接"><a href="#桥接" class="headerlink" title="桥接"></a>桥接</h2><h2 id="共存"><a href="#共存" class="headerlink" title="共存"></a>共存</h2><p>nat用dhcp,桥接用静态,不设置gateway</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/20/hyper-v-e7-bd-91-e7-bb-9c/" data-id="ckb7xgvxn0048hgudei0x5x1x" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-retrofit-e6-8e-a5-e6-94-b6500-e4-bb-a5-e4-b8-8a-e7-9a-84statuscode" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/17/retrofit-e6-8e-a5-e6-94-b6500-e4-bb-a5-e4-b8-8a-e7-9a-84statuscode/" class="article-date">
+  <time datetime="2018-07-17T01:41:37.000Z" itemprop="datePublished">2018-07-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/java-web/">java web</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/17/retrofit-e6-8e-a5-e6-94-b6500-e4-bb-a5-e4-b8-8a-e7-9a-84statuscode/"> 接收500以上的statuscode		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="retrofit"><a href="#retrofit" class="headerlink" title="retrofit"></a>retrofit</h2><p>错误内容在errorBody里，用string()取出json字符串，解析json，得到status字段的值。</p>
+<pre><code>fun &lt;T&gt; Response&lt;T&gt;.status(): Int {
+    return if (this.code() &lt; 500 || this.errorBody() == null) {
+        this.code()
+    } else {
+        val error = this.errorBody()!!.string()
+        val jsonObject = JSONObject(error)
+        jsonObject.getInt(&quot;status&quot;)
+    }
+}</code></pre><h2 id="jquery"><a href="#jquery" class="headerlink" title="jquery"></a>jquery</h2><p>error方法返回的xhr.responseJSON是错误的返回实体,xhr.responseJSON.status就是自定义的状态码</p>
+<pre><code>$.post(url, data, function (result) {}).error(function (xhr) {
+        xhr.responseJSON.status
+        xhr.responseJSON.message
+        });</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/17/retrofit-e6-8e-a5-e6-94-b6500-e4-bb-a5-e4-b8-8a-e7-9a-84statuscode/" data-id="ckb7xgvye005vhgud6gur7scf" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-react-navigation-hide-titlebar" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/14/react-navigation-hide-titlebar/" class="article-date">
+  <time datetime="2018-07-14T07:19:55.000Z" itemprop="datePublished">2018-07-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/react-native/">react-native</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/14/react-navigation-hide-titlebar/"> react-navigation hide titlebar		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最关键的就是这句话，也就是路由可以设置一些属性。</p>
+<pre><code>navigationOptions: {header: null}
+
+
+import {
+    createStackNavigator,
+} from &apos;react-navigation&apos;;
+
+import Playing from &apos;./playing/index&apos;;
+
+const App = createStackNavigator({
+    Home: {screen: Playing, navigationOptions: {header: null}},
+    // Profile: { screen: ProfileScreen },
+});
+
+export default App;</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/14/react-navigation-hide-titlebar/" data-id="ckb7xgvyd005thgudbnpl2zey" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-react-native-e6-9c-80-e7-ae-80-e5-8d-95-e7-9a-84-e9-a1-b5-e9-9d-a2-e8-b7-b3-e8-bd-ac" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/14/react-native-e6-9c-80-e7-ae-80-e5-8d-95-e7-9a-84-e9-a1-b5-e9-9d-a2-e8-b7-b3-e8-bd-ac/" class="article-date">
+  <time datetime="2018-07-14T07:17:56.000Z" itemprop="datePublished">2018-07-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/react-native/">react-native</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/14/react-native-e6-9c-80-e7-ae-80-e5-8d-95-e7-9a-84-e9-a1-b5-e9-9d-a2-e8-b7-b3-e8-bd-ac/"> react-native最简单的页面跳转		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li><p>加依赖</p>
+<pre><code>npm install --save react-navigation</code></pre></li>
+</ol>
+<ol start="2">
+<li>新建导航页面 index.js 路由顺序很重要，第一个就是启动页面，其他的需要手动跳转. screnn的值就是需要跳转的页面</li>
+</ol>
+<pre><code>import {
+  createStackNavigator,
+} from &apos;react-navigation&apos;;
+
+import HomeScreen from &apos;.HomeScreen;
+import ProfileScreen from &apos;.ProfileScreen;
+
+const App = createStackNavigator({
+  Home: { screen: HomeScreen },
+  Profile: { screen: ProfileScreen },
+});
+
+export default App;</code></pre><ol start="3">
+<li><p>入口页面注册导航页面</p>
+<p>import { AppRegistry } from ‘react-native’;<br>import App from ‘./app/index’;</p>
+<p>AppRegistry.registerComponent(‘SuperKouSuan’, () =&gt; App);</p>
+</li>
+</ol>
+<ol start="4">
+<li><p>页面跳转 跳转依赖路由名,datas为页面传参</p>
+<p>this.props.navigation.navigate(‘Profile’,datas)</p>
+</li>
+</ol>
+<ol start="5">
+<li><p>页面接参 通过key值一个一个取,可以添取不到的默认值.</p>
+<p>let data = this.props.navigation.getParam(“data”,”default”);</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/14/react-native-e6-9c-80-e7-ae-80-e5-8d-95-e7-9a-84-e9-a1-b5-e9-9d-a2-e8-b7-b3-e8-bd-ac/" data-id="ckb7xgvyb005phgud2fn6dccp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-react-native-e6-89-93-e5-8c-85bundle-e6-8c-87-e4-bb-a4" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/13/react-native-e6-89-93-e5-8c-85bundle-e6-8c-87-e4-bb-a4/" class="article-date">
+  <time datetime="2018-07-13T13:40:14.000Z" itemprop="datePublished">2018-07-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/react-native/">react-native</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/13/react-native-e6-89-93-e5-8c-85bundle-e6-8c-87-e4-bb-a4/"> react-native打包bundle指令		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>react-native bundle --entry-file index.js --bundle-output ./android/app/src/main/assets/index.android.bundle --platform android --assets-dest ./android/app/src/main/res/ --dev false</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/13/react-native-e6-89-93-e5-8c-85bundle-e6-8c-87-e4-bb-a4/" data-id="ckb7xgvy9005nhgud3k3vazv3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-mysql-e7-94-a8-e6-88-b7-e5-85-81-e8-ae-b8-e5-85-b6-e4-bb-96ip-e7-9a-84-e5-ae-a2-e6-88-b7-e7-ab-af-e8-bf-9e-e6-8e-a5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/13/mysql-e7-94-a8-e6-88-b7-e5-85-81-e8-ae-b8-e5-85-b6-e4-bb-96ip-e7-9a-84-e5-ae-a2-e6-88-b7-e7-ab-af-e8-bf-9e-e6-8e-a5/" class="article-date">
+  <time datetime="2018-07-13T13:23:56.000Z" itemprop="datePublished">2018-07-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/ops/">ops</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/13/mysql-e7-94-a8-e6-88-b7-e5-85-81-e8-ae-b8-e5-85-b6-e4-bb-96ip-e7-9a-84-e5-ae-a2-e6-88-b7-e7-ab-af-e8-bf-9e-e6-8e-a5/"> mysql用户允许其他ip的客户端连接		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><code>GRANT ALL ON *.* to root@&#39;%&#39; IDENTIFIED BY &#39;root的密码&#39;;</code></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/13/mysql-e7-94-a8-e6-88-b7-e5-85-81-e8-ae-b8-e5-85-b6-e4-bb-96ip-e7-9a-84-e5-ae-a2-e6-88-b7-e7-ab-af-e8-bf-9e-e6-8e-a5/" data-id="ckb7xgvy20055hgud7wlo66w7" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-docker-e5-b8-b8-e7-94-a8-e6-8c-87-e4-bb-a4" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/13/docker-e5-b8-b8-e7-94-a8-e6-8c-87-e4-bb-a4/" class="article-date">
+  <time datetime="2018-07-13T13:20:21.000Z" itemprop="datePublished">2018-07-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/docker/">docker</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/13/docker-e5-b8-b8-e7-94-a8-e6-8c-87-e4-bb-a4/"> docker常用指令		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>复制docker内的文件夹到宿主机，不要漏掉点，点代表当前目录</p>
+<pre><code>docker cp 实例名:/var/nginx .</code></pre><p>进入docker实例内部</p>
+<pre><code>docker exec -it 实例名 bash</code></pre><p>删除私有仓库里的镜像</p>
+<pre><code>docker exec -it 私有仓库容器名 rm -rf /var/lib/registry/docker/registry/v2/repositories/镜像名</code></pre><h4 id="docker-run"><a href="#docker-run" class="headerlink" title="docker run"></a>docker run</h4><p>host网络模式</p>
+<pre><code>--net host</code></pre><p>自启动</p>
+<pre><code>--restart=always</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/13/docker-e5-b8-b8-e7-94-a8-e6-8c-87-e4-bb-a4/" data-id="ckb7xgvw9001whgud8pkya55o" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-docker-e5-8a-a0-e9-80-9f-e5-99-a8-e8-ae-be-e7-bd-ae" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/13/docker-e5-8a-a0-e9-80-9f-e5-99-a8-e8-ae-be-e7-bd-ae/" class="article-date">
+  <time datetime="2018-07-13T13:18:59.000Z" itemprop="datePublished">2018-07-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/docker/">docker</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/13/docker-e5-8a-a0-e9-80-9f-e5-99-a8-e8-ae-be-e7-bd-ae/"> docker加速器设置		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>vi /etc/docker/daemon.json</code></pre><p>内容如下，json格式</p>
+<pre><code>{
+    &quot;registry-mirrors&quot;: [&quot;https://registry.docker-cn.com&quot;]
+}</code></pre><p>registry-mirrors对应的值是加速器的数组，json结构. 添加不检查安全性的源(私有仓库)</p>
+<pre><code>{
+
+  &quot;insecure-registries&quot;: [
+    &quot;192.168.1.67:5000&quot;
+  ]
+
+}</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/13/docker-e5-8a-a0-e9-80-9f-e5-99-a8-e8-ae-be-e7-bd-ae/" data-id="ckb7xgvw5001thgud14bk4kcg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-kotlin-e6-8a-80-e5-b7-a7" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/13/kotlin-e6-8a-80-e5-b7-a7/" class="article-date">
+  <time datetime="2018-07-13T13:18:20.000Z" itemprop="datePublished">2018-07-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/kotlin/">kotlin</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/13/kotlin-e6-8a-80-e5-b7-a7/"> kotlin奇技淫巧		</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="一个list转化成另一个list"><a href="#一个list转化成另一个list" class="headerlink" title="一个list转化成另一个list"></a>一个list转化成另一个list</h3><pre><code>val newlist = list.flatMap {
+    listOf(RemoteBanner(it))
+}</code></pre><p>it表示迭代器的每一个元素</p>
+<h3 id="从集合里根据条件查找第一个结果元素"><a href="#从集合里根据条件查找第一个结果元素" class="headerlink" title="从集合里根据条件查找第一个结果元素"></a>从集合里根据条件查找第一个结果元素</h3><p>返回第一个匹配到的元素</p>
+<pre><code>list.find { it.key == key }</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/07/13/kotlin-e6-8a-80-e5-b7-a7/" data-id="ckb7xgvxu004phgud17hu4d6k" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/4/">&amp;laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/6/">Next &amp;raquo;</a>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/android/">android</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/android/kotlin/">kotlin</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/centos/">centos</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/docker/">docker</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/docker/nginx/">nginx</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/java-web/">java web</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/kotlin/">kotlin</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/nginx/">nginx</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/ops/">ops</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/react-native/">react-native</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%86%85%E7%BD%91%E9%80%8F%E4%BC%A0/">内网透传</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/">未分类</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">June 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/06/09/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/20/docker-e6-97-a5-e5-bf-97-e6-b8-85-e7-90-86/"> docker日志清理		</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/16/linux-e4-bf-ae-e6-94-b9-e6-97-b6-e9-97-b4/"> linux 修改时间		</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/16/hex-ascii-e8-bd-ac-e5-8c-96/"> Hex ASCII 转化		</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/16/gitlab-e6-8a-a5500-e9-97-ae-e9-a2-98-e4-bf-ae-e5-a4-8d/"> gitlab报500问题修复		</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
